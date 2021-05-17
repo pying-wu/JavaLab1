@@ -10,6 +10,8 @@ public class TestProduct {
 		//Notebook具備兩個型態,一個是本身的Notebook,另一個是繼承來的Product 俗稱多型
 		Notebook nb = new Notebook("Asus", 30000, 365);
 		System.out.println(nb.desc());
+//		Class nbClass = nb.getClass();
+//		System.out.println(nbClass);
 		
 		Product item = nb;   //Notebook-> Product,子類別轉型成父類別
 		System.out.println(item instanceof Notebook );//true
