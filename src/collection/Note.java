@@ -1,6 +1,6 @@
 package collection;
 //T:type
-public class Note<T> {
+public class Note<T extends Number> {
 
 	private T content;
 	
