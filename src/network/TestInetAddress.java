@@ -14,7 +14,7 @@ public class TestInetAddress {
 		
 		InetAddress google = InetAddress.getByName("www.google.com");
 		System.out.println(google.getHostAddress());
-		
+		 
 		
 	}
 

@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import org.w3c.dom.css.Counter;
+
 public class ReadFileHW {
 
 	public static void main(String[] args) {
@@ -22,8 +24,12 @@ public class ReadFileHW {
 			while ( (line = br.readLine()) !=null) {
 				System.out.println(line);
 				
-				String[] columns = line.split(",");
+				String[] column = line.split(",");
 				//System.out.printf(columns[2]);
+				String salary = column[2];
+//				if ( !isDigital(c)) {
+//					
+//				}
 			}
 	
 			

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Consumer;
 
 import com.sun.org.apache.bcel.internal.generic.NEW;
 
@@ -51,7 +52,22 @@ public class TestArrayList {
 		for( String item   :   list    ) {
 			System.out.println(item);
 		}
+		System.out.println("-----lambda-------");
+		//ctrl+shift+t
+		Consumer<String> consumer = (item) -> System.out.println(item);
+		;
+		//Method reference
+		Consumer<String> consumer1 = System.out::println; //物件::物件方法
+		Consumer<String> consumer2 = TestArrayList::aaa; //class:靜態方法
 		
+		list.forEach(consumer);
+		list.forEach(TestArrayList::aaa);
+		
+	}
+	
+	//型態方法跟Consumer依樣,傳入一個參數,void
+	public static void aaa(String item) {
+		System.out.println(item);
 	}
 
 }

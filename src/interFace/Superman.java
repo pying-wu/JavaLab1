@@ -25,6 +25,13 @@ public class Superman implements Lawyer,Accountant {
 		};
 			
 		acc.報稅();
+		//lambda:functional interface, 介面上只有一種抽象方法  @FunctionalInterface
+		Accountant acc1 = () ->  {
+			System.out.println("綜合所得稅");
+		};
+		Accountant acc2 = () ->  System.out.println("綜合所得稅");
+		//Accountant acc2 =  System.out.println("綜合所得稅");
+		
 		
 		Lawyer l = new Lawyer() {
 			@Override

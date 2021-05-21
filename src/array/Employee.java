@@ -5,7 +5,6 @@ public class Employee {
 	int empno;
 	String name;
 	public int getSalary() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 	

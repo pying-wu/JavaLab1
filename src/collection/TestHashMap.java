@@ -1,9 +1,10 @@
 package collection;
 
-import java.util.HashMap;
+
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.BiConsumer;
 import java.util.Map.Entry;
 
 public class TestHashMap {
@@ -36,6 +37,17 @@ public class TestHashMap {
 			System.out.println(entry.getKey()+"="+entry.getValue());
 		}
 		System.out.println("總和="+sum);
+		
+		System.out.println("----forEach------");
+		BiConsumer<String, Integer> consumer = ( key, value ) -> {
+			System.out.println("key="+key+",value="+value);
+		};
+		map.forEach(TestHashMap::bbbbb);
+		//Method Reference
+		
 	}
-
+    public static void bbbbb(String key, Integer value) {
+    	System.out.println("key="+key+",value="+value);
+    }
+	
 }
