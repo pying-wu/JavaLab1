@@ -1,7 +1,5 @@
 package equals;
 
-import encap.Car;
-
 public class TestEquals {
 
 	public static void main(String[] args) {
